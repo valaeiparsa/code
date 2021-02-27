@@ -9,6 +9,14 @@
   },
   {
     "عنوان": "قرار دادن ادیت تکست در دیالوگ",
-    "کد": "//This code is use to create dialog with edittext in a project.\n\n LinearLayout mylayout \u003d new LinearLayout(this); LinearLayout.LayoutParams params \u003d new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT); mylayout.setLayoutParams(params); mylayout.setOrientation(LinearLayout.VERTICAL); final EditText myedittext \u003d new EditText(this);  myedittext.setLayoutParams(new LinearLayout.LayoutParams(android.widget.LinearLayout.LayoutParams.MATCH_PARENT, android.widget.LinearLayout.LayoutParams.WRAP_CONTENT)); mylayout.addView(myedittext); dialog.setView(mylayout);"
+    "کد": "//This code is use to create dialog with edittext in a project.\n\n LinearLayout mylayout \u003d new LinearLayout(this); LinearLayout.LayoutParams params \u003d new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT); mylayout.setLayoutParams(params); mylayout.setOrientation(LinearLayout.VERTICAL); final EditText myedittext \u003d new EditText(this); myedittext.setLayoutParams(new LinearLayout.LayoutParams(android.widget.LinearLayout.LayoutParams.MATCH_PARENT, android.widget.LinearLayout.LayoutParams.WRAP_CONTENT)); mylayout.addView(myedittext); dialog.setView(mylayout);"
+  },
+  {
+    "عنوان": "لودینگ در دیالوگ‌",
+    "کد": "final ProgressDialog prog \u003d new ProgressDialog(MainActivity.this);prog.setMax(100);prog.setTitle(\"متن بالای دیالوگ\");prog.setMessage(\"پیامتون\");prog.setIndeterminate(true);prog.setCancelable(false);prog.show();"
+  },
+  {
+    "عنوان": "کد نوتیفیکیشن (اعلان)",
+    "کد": "Notification.Builder mBuilder \u003d new Notification.Builder(MainActivity.this);\nmBuilder.setSmallIcon(R.drawable.app_icon);\nmBuilder.setContentTitle(\"عنوان\");\nmBuilder.setContentText(\"پیام شما\");\nmBuilder.setDefaults(\nNotification.DEFAULT_SOUND\n| Notification.DEFAULT_VIBRATE);\nNotificationManager notificationManager \u003d (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);\nnotificationManager.notify((int)1, mBuilder.build());"
   }
 ]
