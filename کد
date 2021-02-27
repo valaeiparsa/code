@@ -1,0 +1,14 @@
+[
+  {
+    "عنوان": "روشن کردن چراغ قوه",
+    "کد": "android.hardware.camera2.CameraManager cameraManager \u003d (android.hardware.camera2.CameraManager) getSystemService(Context.CAMERA_SERVICE);\ntry {\nString cameraId \u003d cameraManager.getCameraIdList()[0]; cameraManager.setTorchMode(cameraId, true); } catch (android.hardware.camera2.CameraAccessException e) { }"
+  },
+  {
+    "عنوان": "خاموش کردن چراغ قوه",
+    "کد": "android.hardware.camera2.CameraManager cameraManager \u003d (android.hardware.camera2.CameraManager) getSystemService(Context.CAMERA_SERVICE);\ntry {\nString cameraId \u003d cameraManager.getCameraIdList()[0]; cameraManager.setTorchMode(cameraId, false); } catch (android.hardware.camera2.CameraAccessException e) { }"
+  },
+  {
+    "عنوان": "قرار دادن ادیت تکست در دیالوگ",
+    "کد": "//This code is use to create dialog with edittext in a project.\n\n LinearLayout mylayout \u003d new LinearLayout(this); LinearLayout.LayoutParams params \u003d new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT); mylayout.setLayoutParams(params); mylayout.setOrientation(LinearLayout.VERTICAL); final EditText myedittext \u003d new EditText(this);  myedittext.setLayoutParams(new LinearLayout.LayoutParams(android.widget.LinearLayout.LayoutParams.MATCH_PARENT, android.widget.LinearLayout.LayoutParams.WRAP_CONTENT)); mylayout.addView(myedittext); dialog.setView(mylayout);"
+  }
+]
