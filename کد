@@ -21,6 +21,6 @@
   },
   {
     "عنوان": "Action bar title",
-    "کد": "getActionBar().setTitle(\"Title\");\n/getActionBar().setTitle(\"Title\");\n//Made by Sketchware Helper"
+    "کد": "getActionBar().setTitle(\"Title\");\n/getActionBar().setTitle(\"Title\");\n"
   }
 ]
