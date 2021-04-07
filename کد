@@ -18,5 +18,9 @@
   {
     "عنوان": "کد نوتیفیکیشن (اعلان)",
     "کد": "Notification.Builder mBuilder \u003d new Notification.Builder(MainActivity.this);\nmBuilder.setSmallIcon(R.drawable.app_icon);\nmBuilder.setContentTitle(\"عنوان\");\nmBuilder.setContentText(\"پیام شما\");\nmBuilder.setDefaults(\nNotification.DEFAULT_SOUND\n| Notification.DEFAULT_VIBRATE);\nNotificationManager notificationManager \u003d (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);\nnotificationManager.notify((int)1, mBuilder.build());"
+  },
+  {
+    "عنوان": "Action bar title",
+    "کد": "getActionBar().setTitle(\"Title\");\n/getActionBar().setTitle(\"Title\");\n//Made by Sketchware Helper"
   }
 ]
